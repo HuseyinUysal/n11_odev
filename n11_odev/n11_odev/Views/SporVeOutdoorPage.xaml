@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.SporVeOutdoorPage">
+    <ContentPage.Content>
+
+        <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+            <StackLayout>
+
+
+                <StackLayout>
+                    <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item One</x:String>
+                                <x:String>Item Two</x:String>
+                                <x:String>Item Three</x:String>
+                                <x:String>Item Four</x:String>
+                                <x:String>Item Fifth</x:String>
+                                <x:String>Item Sixth</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                        <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/640/22/04/21/77/09/00/78/66/90/75/93/36/81396553278891835818.jpg"/>
+
+
+
+                                    </Frame>
+
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <StackLayout>
+                        <Label Text="Tüm Kampanyalar ->" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Yeni Gelenler" TextColor="Black" FontSize="Medium" Margin="15"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/spor-outdoor/gunluk-spor-ayakkabi/puma-smash-buck-v2-erkek-gunluk-spor-ayakkabi-siyah-382612__0138051875274768.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Puma Smash Buck V2 Erkek Günlük Spor Ayakkabı - Siyah - 382612..."></Label>
+                        <Label Text="429,90" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/spor-outdoor/agirlik-sehpasi/rota-spor-rtb4000-flat-agirlik-bench-press-sehpasi__0627767500974318.png"></Image>
+
+                        </Frame>
+                        <Label Text="Rota Spor RTB4000 Flat Ağırlık Bench Press Sehpası"></Label>
+                        <Label Text="700,00" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/spor-outdoor/kamp-sandalyesi/cart-ikili-kamp-sandalyesi__0649874257186006.jpeg"></Image>
+
+                        </Frame>
+                        <Label Text="Cart İkili Kamp Sandalyesi"></Label>
+                        <Label Text="369,90" FontAttributes="Bold"></Label>
+                        <Label Text="Çok Satanlar" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+
+
+                    </StackLayout>
+                    <StackLayout>
+                        <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                            <CollectionView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Item One</x:String>
+                                    <x:String>Item Two</x:String>
+                                    <x:String>Item Three</x:String>
+                                    <x:String>Item Four</x:String>
+                                    <x:String>Item Fifth</x:String>
+                                    <x:String>Item Sixth</x:String>
+                                </x:Array>
+                            </CollectionView.ItemsSource>
+
+                            <CollectionView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Grid Padding="8,4">
+                                        <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                            <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/spor-outdoor/gunluk-spor-ayakkabi/erkek-kadin-triko-spor-ayakkabi__0108518246224155.jpg"/>
+
+
+
+                                        </Frame>
+
+
+                                    </Grid>
+
+                                </DataTemplate>
+
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

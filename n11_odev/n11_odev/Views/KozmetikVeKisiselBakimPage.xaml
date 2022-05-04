@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.KozmetikVeKisiselBakimPage">
+    <ContentPage.Content>
+
+        <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+            <StackLayout>
+
+
+                <StackLayout>
+                    <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item One</x:String>
+                                <x:String>Item Two</x:String>
+                                <x:String>Item Three</x:String>
+                                <x:String>Item Four</x:String>
+                                <x:String>Item Fifth</x:String>
+                                <x:String>Item Sixth</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                        <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/640/22/04/25/80/54/96/63/22/36/25/46/71/75145077428243445233.jpg"/>
+
+
+
+                                    </Frame>
+
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <StackLayout>
+                        <Label Text="Tüm Kampanyalar ->" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Yeni Gelenler" TextColor="Black" FontSize="Medium" Margin="15"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/kozmetik-kisisel-bakim/elektrikli-dis-fircasi/oral-b-io7-interaktif-ekranli-sarjli-dis-fircasi-beyaz__0444302162551896.png"></Image>
+
+                        </Frame>
+                        <Label Text="Oral-B iO7 Şarjlı Diş Fırçası Beyaz"></Label>
+                        <Label Text="3.099,00" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/kozmetik-kisisel-bakim/yuz-bakim-setleri/xiaomi-inface-5-pro-elektrikli-3-modlu-cilt-ve-yuz-temizleme-pemb__0593265050218819.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Xiaomi Inface 5 Pro Elektrikli 3 Modlu Cilt ve Yüz Temizle Pembe"></Label>
+                        <Label Text="444,30" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/kozmetik-kisisel-bakim/yuz-bakim-setleri/xiaomi-inface-ms6000-rf-guzellik-aleti-mor-distributor-garantili__1353595416828200.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Xiaomi Inface Ms6000 Rf Güzellik Aleti Mor Distribütör Garantili"></Label>
+                        <Label Text="1.629,10" FontAttributes="Bold"></Label>
+                        <Label Text="Çok Satanlar" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+
+
+                    </StackLayout>
+                    <StackLayout>
+                        <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                            <CollectionView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Item One</x:String>
+                                    <x:String>Item Two</x:String>
+                                    <x:String>Item Three</x:String>
+                                    <x:String>Item Four</x:String>
+                                    <x:String>Item Fifth</x:String>
+                                    <x:String>Item Sixth</x:String>
+                                </x:Array>
+                            </CollectionView.ItemsSource>
+
+                            <CollectionView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Grid Padding="8,4">
+                                        <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                            <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/kozmetik-kisisel-bakim/deodorant-ve-roll-on/rexona-clinical-clean-stick-clinical-protection-shower-clean-kadin-stick-deodorant-45-ml__1340064171303724.jpg"/>
+
+
+
+                                        </Frame>
+
+
+                                    </Grid>
+
+                                </DataTemplate>
+
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

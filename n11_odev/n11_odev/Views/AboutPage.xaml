@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.AboutPage"
+             xmlns:vm="clr-namespace:n11_odev.ViewModels"
+             Title="{Binding Title}">
+
+
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+
+    </ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                 IconImageSource="xamarin_logo.png"
+                 Order="Primary"
+                 Priority="0"
+                 />
+    </ContentPage.ToolbarItems>
+
+
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="white">#ffffff</Color>
+
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                    <ContentView Padding="0,20,0,20" VerticalOptions="FillAndExpand">
+                        <Image Source="https://logowik.com/content/uploads/images/n112287.jpg" VerticalOptions="Center"  HeightRequest="50" Aspect="AspectFill" WidthRequest="250" />
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <ScrollView Grid.Row="1">
+            <Grid RowDefinitions="Auto,Auto" HeightRequest="700">
+                <Grid ColumnDefinitions="Auto, *" Grid.Row="0">
+
+                    <Label
+                            
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalTextAlignment="End"
+                            FontSize="Medium"
+                            Margin="10,0"/>
+                </Grid>
+
+
+                <SearchBar Placeholder="İstediğin ürün, kategori, markayı ara"
+                               x:Name="searchBar"
+                               Margin="2"
+                               
+                               
+                           BackgroundColor="#f2f2f2"
+                               />
+                <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+                    <StackLayout>
+                        <StackLayout>
+                            <Label Text="Tüm Kampanyaları Keşfet ->" TextColor="Blue" FontSize="Medium"></Label>
+                        </StackLayout>
+                        <StackLayout>
+                            <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="150"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                                <CollectionView.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Item One</x:String>
+                                        <x:String>Item Two</x:String>
+                                        <x:String>Item Three</x:String>
+                                        <x:String>Item Four</x:String>
+                                        <x:String>Item Fifth</x:String>
+                                        <x:String>Item Sixth</x:String>
+                                    </x:Array>
+                                </CollectionView.ItemsSource>
+
+                                <CollectionView.ItemTemplate>
+
+                                    <DataTemplate>
+                                        <Grid Padding="8,4">
+                                            <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="150"
+                                       CornerRadius="2"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                                <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/22/04/25/70/12/58/78/76/35/58/30/44/58317839449154670257.png"/>
+
+
+
+                                            </Frame>
+
+
+                                        </Grid>
+
+                                    </DataTemplate>
+
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </StackLayout>
+                        <StackLayout>
+                            <Image Aspect="AspectFill" 
+                              Source="https://n11scdn.akamaized.net/a1/640/22/04/23/68/40/62/51/13/46/74/64/53/07936324954840318219.jpg"  HeightRequest="100" />
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+                <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="150"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Item One</x:String>
+                            <x:String>Item Two</x:String>
+                            <x:String>Item Three</x:String>
+                            <x:String>Item Four</x:String>
+                            <x:String>Item Fifth</x:String>
+                            <x:String>Item Sixth</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+
+                    <CollectionView.ItemTemplate>
+
+                        <DataTemplate>
+                            <Grid Padding="8,4">
+                                <Frame
+                                       Padding="0"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="2"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                    <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/720_400/22/04/24/57/38/48/29/50/28/75/70/81/41858979700227195121.jpg"/>
+
+
+
+                                </Frame>
+
+
+                            </Grid>
+
+                        </DataTemplate>
+
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+
+
+
+        </ScrollView>
+    </Grid>
+
+
+</ContentPage>

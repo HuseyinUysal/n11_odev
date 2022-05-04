@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.AnneVeBebekPage">
+    <ContentPage.Content>
+
+        <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+            <StackLayout>
+
+
+                <StackLayout>
+                    <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item One</x:String>
+                                <x:String>Item Two</x:String>
+                                <x:String>Item Three</x:String>
+                                <x:String>Item Four</x:String>
+                                <x:String>Item Fifth</x:String>
+                                <x:String>Item Sixth</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                        <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/640/22/04/30/70/42/54/05/08/00/14/48/80/96506558856943548228.jpg"/>
+
+
+
+                                    </Frame>
+
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <StackLayout>
+                        <Label Text="Tüm Kampanyalar ->" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Yeni Gelenler" TextColor="Black" FontSize="Medium" Margin="15"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/anne-bebek/bebek-bezi/elbebek-elite-yenidogan-firsat-paketi-bebek-bezi-2-5-kg-1-beden-150-adet__1523753859507897.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Elbebek Elite Yenidoğan Bebek Bezi 1 Numara Fırsat Plaet 150 Adet"></Label>
+                        <Label Text="168,00" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/anne-bebek/mama-sandalyesi/kiwi-koala-plus-kw-4030-all-in-one-katlanir-tekerlekli-mama-sandalyesi__1004903801292069.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Kiwi Koala Plus KW-4030 All In One Katlanır Tekerlekli Mama Sandalyesi"></Label>
+                        <Label Text="999,90" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/anne-bebek/bebek-bezi/molfix-mayo-bebek-bezi-5-6-numara-10-adet__0749727920954010.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Molfix Mayo Bebek Bezi 5-6 Numara 10 Adet"></Label>
+                        <Label Text="40,26" FontAttributes="Bold"></Label>
+                        <Label Text="Çok Satanlar" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+
+
+                    </StackLayout>
+                    <StackLayout>
+                        <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                            <CollectionView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Item One</x:String>
+                                    <x:String>Item Two</x:String>
+                                    <x:String>Item Three</x:String>
+                                    <x:String>Item Four</x:String>
+                                    <x:String>Item Fifth</x:String>
+                                    <x:String>Item Sixth</x:String>
+                                </x:Array>
+                            </CollectionView.ItemsSource>
+
+                            <CollectionView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Grid Padding="8,4">
+                                        <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                            <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/anne-bebek/travel-sistem-bebek-arabasi/huggy-bonn-5-in-1-travel-sistem-bebek-arabasi__1372123277257205.jpg"/>
+
+
+
+                                        </Frame>
+
+
+                                    </Grid>
+
+                                </DataTemplate>
+
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

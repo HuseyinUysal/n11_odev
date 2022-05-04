@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.EvVeYasamPage">
+    <ContentPage.Content>
+
+        <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+            <StackLayout>
+
+
+                <StackLayout>
+                    <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item One</x:String>
+                                <x:String>Item Two</x:String>
+                                <x:String>Item Three</x:String>
+                                <x:String>Item Four</x:String>
+                                <x:String>Item Fifth</x:String>
+                                <x:String>Item Sixth</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                        <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/640/22/04/29/72/71/74/34/35/06/21/46/84/11883465086042029622.jpg"/>
+
+
+
+                                    </Frame>
+
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <StackLayout>
+                        <Label Text="Tüm Kampanyalar ->" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Yeni Gelenler" TextColor="Black" FontSize="Medium" Margin="15"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/ev-yasam/ahsap-tablo/ahsap-tablo-eski-zeminde-karavan-afisi__0442369892557769.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Ahşap Tablo Eski zeminde karavan afişi Dekoratif ahşap Tablo"></Label>
+                        <Label Text="39,90" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/ev-yasam/lambader-ve-kose-aydinlatmalari/kozalak-ahsap-lambader-3-ayakli-abajur-mavi-3007__0309811573036042.jpeg"></Image>
+
+                        </Frame>
+                        <Label Text="Kozalak Ahşap Lambader 3 Ayaklı Abajur Mavi 3007"></Label>
+                        <Label Text="199,00" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/ev-yasam/ahsap-tablo/ahsap-tablo-eski-zeminde-karavan-afisi__0442369892557769.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Ahşap Tablo Eski zeminde karavan afişi Dekoratif ahşap Tablo"></Label>
+                        <Label Text="39,90" FontAttributes="Bold"></Label>
+                        <Label Text="Çok Satanlar" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+
+
+                    </StackLayout>
+                    <StackLayout>
+                        <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                            <CollectionView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Item One</x:String>
+                                    <x:String>Item Two</x:String>
+                                    <x:String>Item Three</x:String>
+                                    <x:String>Item Four</x:String>
+                                    <x:String>Item Fifth</x:String>
+                                    <x:String>Item Sixth</x:String>
+                                </x:Array>
+                            </CollectionView.ItemsSource>
+
+                            <CollectionView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Grid Padding="8,4">
+                                        <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                            <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/ev-yasam/kuru-mama/enjoy-cat-food-tavuklu-yetiskin-kedi-mamasi-15-kg__0104082170507815.png"/>
+
+
+
+                                        </Frame>
+
+
+                                    </Grid>
+
+                                </DataTemplate>
+
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

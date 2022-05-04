@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="n11_odev.Views.MucevherVeSaatPage">
+    <ContentPage.Content>
+
+        <ScrollView Padding="0" Grid.Row="2" Orientation="Vertical">
+            <StackLayout>
+
+
+                <StackLayout>
+                    <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                        <CollectionView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Item One</x:String>
+                                <x:String>Item Two</x:String>
+                                <x:String>Item Three</x:String>
+                                <x:String>Item Four</x:String>
+                                <x:String>Item Fifth</x:String>
+                                <x:String>Item Sixth</x:String>
+                            </x:Array>
+                        </CollectionView.ItemsSource>
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+                                <Grid Padding="8,4">
+                                    <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                        <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/640/22/04/24/56/21/94/85/15/32/61/25/68/87833372208695456624.jpg"/>
+
+
+
+                                    </Frame>
+
+
+                                </Grid>
+
+                            </DataTemplate>
+
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <StackLayout>
+                        <Label Text="Tüm Kampanyalar ->" TextColor="Blue" FontSize="Medium" HorizontalTextAlignment="Center"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Yeni Gelenler" TextColor="Black" FontSize="Medium" Margin="15"></Label>
+                    </StackLayout>
+                    <StackLayout>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/mucevher-saat/erkek-kol-saati/casio-edifice-efv-c100l-1avdf-erkek-kol-saati__1181730757819981.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Casio Edifice EFV-C100L-1AVDF Erkek Kol Saati"></Label>
+                        <Label Text="1.737,55" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/mucevher-saat/spor-ve-fantezi-kolye/gumus-anne-cocuk-pembe-tasli-kolye__0374313549650591.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Gümüş Anne Çocuk Pembe Taşlı Kolye"></Label>
+                        <Label Text="305,15" FontAttributes="Bold"></Label>
+                        <Frame
+                               Padding="2"
+                               Margin="5"
+                               BackgroundColor="White"
+                               WidthRequest="300"
+                               CornerRadius="1"
+                               HasShadow="False"
+                               IsClippedToBounds="True"
+                                HorizontalOptions="Start">
+                            <Image Aspect="AspectFit" HorizontalOptions="Start" HeightRequest="200" WidthRequest="150"
+                      Source="https://n11scdn.akamaized.net/a1/216/mucevher-saat/spor-ve-fantezi-kolye/lova-bebek-ayagi-kolyesi-2040053__0389350731575183.jpg"></Image>
+
+                        </Frame>
+                        <Label Text="Lova Bebek Ayağı Kolyesi - 2040053"></Label>
+                        <Label Text="3.505,00" FontAttributes="Bold"></Label>
+                        <Label Text="Çok Satanlar" FontAttributes="Bold" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"></Label>
+
+
+                    </StackLayout>
+                    <StackLayout>
+                        <CollectionView
+                            Grid.Row="1"
+                            HeightRequest="225"
+                            WidthRequest="300"
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="Start">
+                            <CollectionView.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Item One</x:String>
+                                    <x:String>Item Two</x:String>
+                                    <x:String>Item Three</x:String>
+                                    <x:String>Item Four</x:String>
+                                    <x:String>Item Fifth</x:String>
+                                    <x:String>Item Sixth</x:String>
+                                </x:Array>
+                            </CollectionView.ItemsSource>
+
+                            <CollectionView.ItemTemplate>
+
+                                <DataTemplate>
+                                    <Grid Padding="8,4">
+                                        <Frame
+                                       Padding="9"
+                                       Margin="0"
+                                       BackgroundColor="White"
+                                       WidthRequest="300"
+                                       CornerRadius="1"
+                                       HasShadow="False"
+                                       IsClippedToBounds="True">
+
+                                            <Image
+                                        Aspect="AspectFill"
+                                        Source="https://n11scdn.akamaized.net/a1/216/mucevher-saat/erkek-kol-saati/casio-efr-546l-2avudf-erkek-kol-saati__0891900317196479.jpg"/>
+
+
+
+                                        </Frame>
+
+
+                                    </Grid>
+
+                                </DataTemplate>
+
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+
+    </ContentPage.Content>
+
+</ContentPage>
